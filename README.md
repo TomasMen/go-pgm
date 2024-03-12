@@ -52,17 +52,17 @@ Error Handling
 
 The ReadPGM function returns an error if any of the following conditions are met:
 
-    Invalid file name (file extension must be .pgm)
-    File type is not P5 (raw) format
-    Invalid magic number in the PGM header
-    Width or height values are not valid ASCII numbers
-    Maximum pixel value is not a valid ASCII number or exceeds 255
-    End of file is reached before all pixel intensities are read
+- Invalid file name (file extension must be .pgm)
+- File type is not P5 (raw) format
+- Invalid magic number in the PGM header
+- Width or height values are not valid ASCII numbers
+- Maximum pixel value is not a valid ASCII number or exceeds 255
+- End of file is reached before all pixel intensities are read
 
 Limitations
 
-    This package currently only supports reading P5 (raw) format PGM images
-    The maximum pixel value is limited to 255
+This package currently only supports reading P5 (raw) format PGM images
+The maximum pixel value is limited to 255
 
 Contributing
 
