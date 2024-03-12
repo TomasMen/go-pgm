@@ -64,3 +64,10 @@ Limitations
 This package currently only supports reading P5 (raw) format PGM images
 The maximum pixel value is limited to 255
 
+Contributing
+
+Contributions to this package are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
+License
+
+This package is licensed under the MIT License.
+
