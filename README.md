@@ -1,9 +1,9 @@
-Go-PGM File Reader
+# Go-PGM File Reader
 
 This Go package provides functionality to read Portable Gray Map (PGM) image files in the P5 (raw) format.
 It is not a complete package and it was intended to explore how images are read byte by byte, and also the pgm format.
 
-What it does (Features):
+## What it does (Features):
 
 - Reads PGM files with the .pgm extension
 - Supports P5 (raw) format PGM images
@@ -11,12 +11,12 @@ What it does (Features):
 - Reads the maximum pixel value (up to 255)
 - Stores the pixel intensities in a 2D slice of uint8 values
 
-What it doesn't do (Limitations):
+## What it doesn't do (Limitations):
 
 - This package currently only supports reading P5 (raw) format PGM images
 - The maximum pixel value is limited to 255 (uint8 values)
 
-Installation
+## Installation
 
 To use this package in your Go project, you can install it using the following command:
 
@@ -55,7 +55,7 @@ func main() {
 }
 ```
 
-Error Handling
+## Error Handling
 
 The ReadPGM function returns an error if any of the following conditions are met:
 
@@ -66,10 +66,11 @@ The ReadPGM function returns an error if any of the following conditions are met
 - Maximum pixel value is not a valid ASCII number or exceeds 255
 - End of file is reached before all pixel intensities are read
 
-Contributing
+## Contributing
 
 Contributions to this package are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
-License
+
+##License
 
 This package is licensed under the MIT License.
 
