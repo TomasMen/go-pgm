@@ -1,4 +1,4 @@
-package pgmreader
+package gopgm
 
 import (
     "fmt"
