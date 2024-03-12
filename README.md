@@ -13,14 +13,11 @@ Installation
 
 To use this package in your Go project, you can install it using the following command:
 
-go get github.com/yourusername/gopgm
-
-Make sure to replace yourusername with your actual GitHub username or the appropriate package path.
-Usage
+go get github.com/TomasMen/go-pgm
 
 Here's an example of how to use the gopgm package to read a PGM image file:
 
-go
+```go
 
 package main
 
@@ -49,6 +46,7 @@ func main() {
         }
     }
 }
+```
 
 Error Handling
 
