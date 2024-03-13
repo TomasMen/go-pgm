@@ -17,6 +17,38 @@ type PGMImage struct {
     Pixels [][]uint8
 } 
 
+func WritePGM(image PGMImage, fileName string) error {
+    file, err := os.Create(fileName)
+    if err != nil {
+        return err
+    }
+    defer file.Close()
+
+    writer := bufio.NewWriter(file)
+
+    // Write the PGM header
+    _, err = fmt.Fprintf(writer, "P5\n%d %d\n%d\n", image.Width, image.Height, image.MaxVal)
+    if err != nil {
+        return err
+    }
+
+    // Write the pixel data
+    for y := 0; y < image.Height; y++ {
+        _, err = writer.Write(image.Pixels[y])
+        if err != nil {
+            return err
+        }
+    }
+
+    // Flush the writer to ensure all data is written to the file
+    err = writer.Flush()
+    if err != nil {
+        return err
+    }
+
+    return nil
+}
+
 func ReadPGM(filePath string) (*PGMImage, error) {
     if len(filePath) < 5 {
         return nil, errors.New("Error: Invalid file name")
