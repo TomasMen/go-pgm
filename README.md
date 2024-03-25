@@ -19,9 +19,9 @@ It is not a complete package and it was intended to explore how images are read 
 ## Installation
 
 To use this package in your Go project, you can install it using the following command:
-
+```
 go get github.com/TomasMen/go-pgm
-
+```
 Here's an example of how to use the gopgm package to read a PGM image file:
 
 ```go
