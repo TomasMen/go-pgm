@@ -70,7 +70,7 @@ The ReadPGM function returns an error if any of the following conditions are met
 
 Contributions to this package are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
 
-##License
+## License
 
 This package is licensed under the MIT License.
 
