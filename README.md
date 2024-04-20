@@ -30,7 +30,7 @@ package main
 
 import (
     "fmt"
-    "github.com/yourusername/gopgm"
+    gopgm "github.com/TomasMen/go-pgm"
 )
 
 func main() {
